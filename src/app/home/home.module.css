@@ -213,3 +213,8 @@
   --ig-size: var(--ig-size-small);
   height: max-content;
 }
+.revealView {
+  position: relative;
+  /* margin-left: -240px;
+  margin-top: -57px; */
+}
