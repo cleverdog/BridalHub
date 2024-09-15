@@ -10,6 +10,7 @@ export default function Customers() {
   const classes = createClassTransformer(styles);
   const uuid = () => crypto.randomUUID();
   const { usersMasterTable1 } = usersMasterUseGetTable1List();
+  console.log(usersMasterTable1);
 
   return (
     <>
@@ -26,18 +27,18 @@ export default function Customers() {
                 <span key={uuid()}>お客様一覧</span>
               </IgrGridToolbarTitle>
             </IgrGridToolbar>
-            <IgrColumn field="UserID" dataType="string" header="UserID" hidden="true" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="CustomerID" dataType="string" header="CustomerID" hidden="true" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="GroomName" dataType="string" header="氏名（新郎）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="BrideName" dataType="string" header="氏名（新婦）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="GroomEmail" dataType="string" header="Email（新郎）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="BrideEmail" dataType="string" header="Email（新婦）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="GroomPhoneNumber" dataType="string" header="電話番号（新郎）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="BridePhoneNumber" dataType="string" header="電話番号（新婦）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="GroomAddress" dataType="string" header="住所（新郎）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="BrideAddress" dataType="string" header="住所（新婦）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="GroomBirthdate" dataType="string" header="生年月日（新郎）" sortable="true" selectable="false"></IgrColumn>
-            <IgrColumn field="BrideBirthdate" dataType="string" header="生年月日（新婦）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="user_id" dataType="string" header="UserID" hidden="true" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="customer_id" dataType="string" header="CustomerID" hidden="true" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="groom_name" dataType="string" header="氏名（新郎）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="bride_name" dataType="string" header="氏名（新婦）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="groom_email" dataType="string" header="Email（新郎）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="bride_email" dataType="string" header="Email（新婦）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="groom_phone_number" dataType="string" header="電話番号（新郎）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="bride_phone_number" dataType="string" header="電話番号（新婦）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="groom_address" dataType="string" header="住所（新郎）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="bride_address" dataType="string" header="住所（新婦）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="groom_birthdate" dataType="string" header="生年月日（新郎）" sortable="true" selectable="false"></IgrColumn>
+            <IgrColumn field="bride_birthdate" dataType="string" header="生年月日（新婦）" sortable="true" selectable="false"></IgrColumn>
             <IgrPaginator></IgrPaginator>
           </IgrGrid>
         </div>

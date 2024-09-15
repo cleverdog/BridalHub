@@ -22,7 +22,7 @@ export class FetchApi {
     if (body !== null && body !== undefined) {
       options.body = body;
     }
-    
+
     if (includeCredentials) {
       options.credentials = 'include';
     }

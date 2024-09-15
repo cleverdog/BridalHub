@@ -26,31 +26,31 @@ export default function Planners() {
                 <IgrCard className={classes("card")} key={uuid()}>
                   <div className={classes("group_3")} key={uuid()}>
                     <IgrCardHeader>
-                      <div slot="thumbnail" key={uuid()}>
-                        <IgrAvatar src="/src/assets/man02.jpg" shape="circle" className={classes("avatar")} key={uuid()}></IgrAvatar>
-                      </div>
+                        <div slot="thumbnail" key={uuid()}>
+                        <IgrAvatar src={`/src/assets/${item.photo}.jpg`} shape="circle" className={classes("avatar")} key={uuid()}></IgrAvatar>
+                        </div>
                       <h3 slot="title" key={uuid()}>
-                        <span key={uuid()}>{item.PlannerName}</span>
+                        <span key={uuid()}>{item.planner_name}</span>
                       </h3>
                       <h5 slot="subtitle" key={uuid()}>
-                        <span key={uuid()}>{item.Position}</span>
+                        <span key={uuid()}>{item.position}</span>
                       </h5>
                     </IgrCardHeader>
-                    <IgrCardContent className={classes("body-content")}>
+                    <IgrCardContent className={classes("body-content padding_fix")}>
                       <div className={classes("row-layout group_4")} key={uuid()}>
-                        <p className={classes("typography__subtitle-2 text_1")}>
+                        <p className={classes("typography__subtitle-2 text_1 font_sm")}>
                           <span>生年月日</span>
                         </p>
-                        <p className={classes("typography__body-1 text_1")}>
-                          <span>{item.Birthdate}</span>
+                        <p className={classes("typography__body-1 text_1 font_sm")}>
+                          <span>{item.birth_date}</span>
                         </p>
                       </div>
                       <div className={classes("row-layout group_4")} key={uuid()}>
-                        <p className={classes("typography__subtitle-2 text_1")}>
+                        <p className={classes("typography__subtitle-2 text_1 font_sm")}>
                           <span>登録年月日</span>
                         </p>
-                        <p className={classes("typography__body-1 text_1")}>
-                          <span>{item.RegistrationDate}</span>
+                        <p className={classes("typography__body-1 text_1 font_sm")}>
+                          <span>{item.registration_date}</span>
                         </p>
                       </div>
                     </IgrCardContent>

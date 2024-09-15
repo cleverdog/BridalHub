@@ -1,12 +1,10 @@
 export interface Table1Type {
-  PlannerID: string;
-  CustomerID: string;
-  PlannerName: string;
-  Gender: string;
-  Birthdate: string;
-  Email: string;
-  PhoneNumber: string;
-  RegistrationDate: string;
-  Specialty: string;
-  Position: string;
+  planner_id: string;
+  customer_id: string;
+  planner_name: string;
+  gender: string;
+  birth_date: string;
+  registration_date: string;
+  position: string;
+  photo: string;
 }

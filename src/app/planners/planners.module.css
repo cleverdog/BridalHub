@@ -96,3 +96,10 @@
 .icon-button::part(base) {
   color: hsla(var(--ig-info-500));
 }
+.font_sm {
+  font-size: 12px;
+}
+.padding_fix {
+  padding-bottom: 5px;
+  padding-top: 0;
+}
